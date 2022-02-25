@@ -30,6 +30,7 @@
       Ubuntu, Cantarell, Fira Sans,
       Droid Sans, Helvetica Neue, sans-serif;
   }
+
   a {
     text-decoration: none;
   }
@@ -41,11 +42,12 @@
     align-items: center;
     background-color: rgb(235, 233, 233);
   }
+
   .logo {
     margin-left: 100px;
     width: 50%;
   }
-  
+
   .banner {
     background-image: url(./img/home.jpg);
     background-repeat: no-repeat;
@@ -89,8 +91,8 @@
   .box {
     width: 360px;
     height: 400px;
-    background-color: rgba(43, 45, 44, 0.496);
-    backdrop-filter: blur(10px);
+    background-color: rgb(21, 159, 90);
+    /* backdrop-filter: blur(10px); */
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -111,18 +113,17 @@
     margin-bottom: 20px;
   }
 
-  .option {
+  .options-box>div {
     width: 140px;
     border: 5px solid #4CAC33;
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 10px;
     cursor: pointer;
-    transition: .3s;
   }
-  .option:hover{
-    background-color: #2d731b;
-  }
+  .optionSelect {
+      background-color: #4cc72e;
+    }
 
   .icon-option {
     font-size: 30px;
@@ -131,22 +132,24 @@
     color: white;
 
   }
+  
 
   .subtitle-option {
     text-align: center;
     font-weight: bold;
     color: white;
   }
-  
-    .more-detail {
-      text-align: center;
-      cursor: pointer;
-      color: white;
-      transition: .3s;
-    }
-    .more-detail:hover{
-      text-decoration: underline;
-    }
+
+  .more-detail {
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    transition: .3s;
+  }
+
+  .more-detail:hover {
+    text-decoration: underline;
+  }
 
   .btn-box {
     margin-top: 20px;
@@ -163,8 +166,7 @@
   }
 
   .btn-box:hover {
-    background-color: #2d731b;
-    color: white;
+    background-color: #60ff38;
   }
 
   .info {
@@ -174,16 +176,17 @@
   }
 
   @media (max-width:930px) {
-    .banner{
+    .banner {
       height: 800px;
     }
-    
-    .content-banner{
+
+    .content-banner {
       width: 100%;
       text-align: center;
-      
+
     }
-    .content-banner p{
+
+    .content-banner p {
       color: wheat;
       text-shadow: 1px 1px 1px black;
       font-weight: bold;
@@ -199,40 +202,47 @@
       flex-direction: row;
     }
 
-    .info{
+    .info {
       padding: 20px 10%;
     }
 
     @media (max-width:500px) {
-      .banner{
+      .banner {
         height: 1200px;
       }
-      .banner p{
+
+      .banner p {
         color: wheat;
         font-weight: bold;
       }
 
-      .box{
+      .box {
         height: 650px;
       }
-      .info{
+
+      .info {
         padding: 20px 5%;
       }
     }
+
     @media (max-width:300px) {
-      .logo{
+      .logo {
         margin-left: 70px;
       }
-      .title-banner{
+
+      .title-banner {
         font-size: 45px;
       }
-      .banner{
+
+      .banner {
         height: 1400px;
       }
-      .box{
+
+      .box {
         height: 650px;
       }
-      .info{
+
+      .info {
         height: 350px;
       }
     }
@@ -271,32 +281,25 @@
           <h3 class="title">Qual a sua necessidade?</h3>
           <div class="options-box">
             <!-- Repete esse -->
-            <div class="option">
-              <a href="https://site-nakonta.vercel.app/carts.html" rel="noopener">
+
+
+            <div id="option" class="option">
               <i class="icon-option fa-solid fa-house"></i>
               <p class="subtitle-option">Despesas diárias</p>
-              </a>
             </div>
-            <div class="option">
-              <a href="https://site-nakonta.vercel.app/carts.html"  rel="noopener">
+            <div id="option" class="option">
               <i class="icon-option fa-solid fa-plane"></i>
               <p class="subtitle-option">Viagens</p>
-            </a>
 
             </div>
-            <div class="option">
-              <a href="https://site-nakonta.vercel.app/carts.html"  rel="noopener">
+            <div id="option" class="option">
               <i class="icon-option fa-solid fa-bag-shopping"></i>
               <p class="subtitle-option">Compras</p>
-            </a>
 
             </div>
-            <div class="option">
-              <a href="https://site-nakonta.vercel.app/carts.html" rel="noopener ">
+            <div id="option" class="option">
               <i class="icon-option fa-solid fa-money-bill-1-wave"></i>
               <p class="subtitle-option">Limite maior</p>
-            </a>
-
             </div>
 
           </div>
@@ -305,17 +308,17 @@
             <p class="more-detail">Quero ver melhores opções</p>
           </a>
 
-         
-            <button class="btn-box"> <a href="https://site-nakonta.vercel.app/carts.html"></a>Ver melhores opções </a></button>
 
-         
+          <button class="btn-box"> <a href="https://site-nakonta.vercel.app/carts.html"></a>Ver melhores opções
+            </a></button>
+
+
         </div>
       </section>
 
       <section style="color: yellow; background-color: #2d731b; padding: 5px; text-align: center; font-weight: bold;">
         <p>Selecionamos as melhores ofertas do mercado para você aproveitar ao máximo seu cartão</p>
       </section>
-
       <!-- Offers -->
       <section style="background-color: #4CAC33;">
         <div style="display: flex; justify-content: space-around; flex-wrap: wrap; flex-direction:row;">
@@ -387,8 +390,6 @@
         </div>
       </section>
       <!-- Info  Bottom -->
-
-
       <section class="info">
         <p style="color: #999999;">A <strong>Nakonta</strong> é uma nova opção do mercado para apresentar aos seus
           usuários as opções existentes de cartões de crédito, como objetivo de simplificar e agregar seus valores de
@@ -416,7 +417,8 @@
       </div>
       <div style="display: flex; justify-content: center; font-size: 20px; margin-top: 20px;">
         <a href="">
-          <img src="https://nakonta.online/assets/img/logo-footer.png" alt="logo da nakonta" style="width: 90px; margin-top: 3px;">
+          <img src="https://nakonta.online/assets/img/logo-footer.png" alt="logo da nakonta"
+            style="width: 90px; margin-top: 3px;">
         </a>
         <a href="https://web.facebook.com/nakonta.online?_rdc=1&_rdr" style="text-decoration: none; margin: 0 20px;">
           <i class="fa-brands fa-facebook" style="color: white;" onmouseover="this.style.color='#3F62A9'"
@@ -429,6 +431,29 @@
       </div>
     </footer>
   </div>
+
+  <style>
+
+  </style>
+
+  <script>
+
+    // Cor da opção selecionada
+    let optionClicked = document.querySelectorAll(".options-box > div")
+
+    optionClicked.forEach(function (key) {
+      key.addEventListener('click', function () {
+        removeStyles();
+        this.setAttribute('class', 'optionSelect')
+      })
+    })
+
+    function removeStyles() {
+      for (let i = 0; i < optionClicked.length; i++) {
+        document.querySelectorAll('.options-box > div')[i].removeAttribute('class')
+      }
+    }
+  </script>
 </body>
 
 </html>
