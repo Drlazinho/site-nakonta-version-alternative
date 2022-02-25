@@ -11,4 +11,3 @@ Site de Captura de Clientes para usos de cartões de créditos desenvolvido em u
 * CSS3 Interno e Inline;
 * FontAwesome para ícones;
 * Responsive Web;
-

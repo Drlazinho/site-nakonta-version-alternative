@@ -30,6 +30,9 @@
       Ubuntu, Cantarell, Fira Sans,
       Droid Sans, Helvetica Neue, sans-serif;
   }
+  a {
+    text-decoration: none;
+  }
 
   header {
     display: flex;
@@ -105,6 +108,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 20px;
   }
 
   .option {
@@ -113,6 +117,11 @@
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .option:hover{
+    background-color: #2d731b;
   }
 
   .icon-option {
@@ -128,8 +137,19 @@
     font-weight: bold;
     color: white;
   }
+  
+    .more-detail {
+      text-align: center;
+      cursor: pointer;
+      color: white;
+      transition: .3s;
+    }
+    .more-detail:hover{
+      text-decoration: underline;
+    }
 
   .btn-box {
+    margin-top: 20px;
     background-color: #4CAC33;
     outline: none;
     cursor: pointer;
@@ -138,16 +158,13 @@
     border-radius: 20px;
     padding: 10px;
     font-weight: bold;
-  }
+    transition: .3s;
 
-  .more-detail {
-    margin: 20px;
-    text-align: center;
   }
 
   .btn-box:hover {
     background-color: #2d731b;
-    transition: .3s;
+    color: white;
   }
 
   .info {
@@ -253,28 +270,43 @@
           <div class="options-box">
             <!-- Repete esse -->
             <div class="option">
+              <a href="https://site-nakonta.vercel.app/carts.html" rel="noopener">
               <i class="icon-option fa-solid fa-house"></i>
               <p class="subtitle-option">Despesas diárias</p>
+              </a>
             </div>
             <div class="option">
+              <a href="https://site-nakonta.vercel.app/carts.html"  rel="noopener">
               <i class="icon-option fa-solid fa-plane"></i>
               <p class="subtitle-option">Viagens</p>
+            </a>
+
             </div>
             <div class="option">
+              <a href="https://site-nakonta.vercel.app/carts.html"  rel="noopener">
               <i class="icon-option fa-solid fa-bag-shopping"></i>
               <p class="subtitle-option">Compras</p>
+            </a>
+
             </div>
             <div class="option">
+              <a href="https://site-nakonta.vercel.app/carts.html" rel="noopener ">
               <i class="icon-option fa-solid fa-money-bill-1-wave"></i>
               <p class="subtitle-option">Limite maior</p>
+            </a>
+
             </div>
 
           </div>
-          <p class="more-detail">Quero ver melhores opções</p>
-          <a href="https://site-nakonta.vercel.app/carts.html">
-            <button class="btn-box">Ver melhores opções</button>
 
+          <a href="https://site-nakonta.vercel.app/carts.html">
+            <p class="more-detail">Quero ver melhores opções</p>
           </a>
+
+         
+            <button class="btn-box"> <a href="https://site-nakonta.vercel.app/carts.html"></a>Ver melhores opções </a></button>
+
+         
         </div>
       </section>
 
