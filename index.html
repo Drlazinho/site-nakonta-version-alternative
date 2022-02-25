@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" style="margin: 0;">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="description" content="Cartões
+  com custo ZERO e Cashback!
+  No Nakonta você encontra o melhor cartão para você!">
+  <title>Nakonta</title>
+</head>
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    background-color: aliceblue;
+    font-size: 18px;
+    margin: 0 auto;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont,
+      Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans,
+      Droid Sans, Helvetica Neue, sans-serif;
+  }
+
+  header {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 233, 233);
+  }
+
+  .banner {
+    background-image: url(https://nakonta.online/assets/img/nakonta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 50px;
+  }
+
+  .logo {
+    margin-left: 100px;
+    width: 50%;
+  }
+
+  .content-banner {
+    width: 50%;
+    color: #4CAC33;
+    padding-top: 40px;
+  }
+
+  .content-banner p {
+    color: black;
+  }
+
+  .title-banner {
+    margin: 0;
+    font-weight: 700;
+    font-size: 65px;
+  }
+
+  .cards {
+    margin-top: 30px;
+  }
+
+  .card-img {
+    width: 20%;
+    min-width: 100px;
+  }
+
+  .box {
+    width: 360px;
+    height: 400px;
+    background-color: rgba(43, 45, 44, 0.496);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 0 20px;
+  }
+
+  .box .title {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .options-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .option {
+    width: 140px;
+    border: 5px solid #4CAC33;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .icon-option {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+  }
+
+  .subtitle-option {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+  }
+
+  .btn-box {
+    background-color: #4CAC33;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  .more-detail {
+    margin: 20px;
+  }
+
+  .btn-box:hover {
+    background-color: #2d731b;
+    transition: .3s;
+  }
+
+  .info {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    height: 150px;
+  }
+
+  @media (max-width:930px) {
+    .banner{
+      height: 800px;
+    }
+    .content-banner{
+      width: 100%;
+      text-align: center;
+    }
+
+    .box {
+      width: 90vw;
+      height: 380px;
+    }
+
+    .options-box {
+      flex-direction: row;
+    }
+
+    .info{
+      height: 240px;
+    }
+
+    @media (max-width:500px) {
+      .banner{
+        height: 1200px;
+      }
+      .box{
+        height: 650px;
+      }
+    }
+    @media (max-width:300px) {
+      .logo{
+        margin-left: 70px;
+      }
+      .title-banner{
+        font-size: 45px;
+      }
+      .banner{
+        height: 1400px;
+      }
+      .box{
+        height: 650px;
+      }
+      .info{
+        height: 350px;
+      }
+    }
+
+  }
+</style>
+
+<body>
+  <div>
+    <header>
+      <a href="https://nakonta.online/">
+        <img class="logo" src="https://nakonta.online/assets/img/nakonta-logo.png" alt="Logomarca da Nakota" />
+      </a>
+    </header>
+
+    <main>
+      <!-- Banner -->
+      <section class="banner">
+        <div class="content-banner">
+          <h1 class="title-banner">Cartões</h1>
+          <h2>com custo ZERO e Cashback!</h2>
+          <p>No Nakonta você encontra<br> o melhor cartão para você!</p>
+
+          <div class="cards">
+            <img class="card-img" src="./img/carrefour.png" alt="" srcset="">
+            <img class="card-img" src="./img/cartao-black.png" alt="" srcset="">
+            <img class="card-img" src="./img/cartao-cinza.png" alt="" srcset="">
+            <img class="card-img" src="./img/cartao-sx.png" alt="" srcset="">
+          </div>
+        </div>
+
+
+        <!-- Style BOX -->
+        <!-- Box -->
+        <div class="box">
+          <h3 class="title">Qual a sua necessidade?</h3>
+          <div class="options-box">
+            <!-- Repete esse -->
+            <div class="option">
+              <i class="icon-option fa-solid fa-house"></i>
+              <p class="subtitle-option">Despesas diárias</p>
+            </div>
+            <div class="option">
+              <i class="icon-option fa-solid fa-plane"></i>
+              <p class="subtitle-option">Viagens</p>
+            </div>
+            <div class="option">
+              <i class="icon-option fa-solid fa-bag-shopping"></i>
+              <p class="subtitle-option">Compras</p>
+            </div>
+            <div class="option">
+              <i class="icon-option fa-solid fa-money-bill-1-wave"></i>
+              <p class="subtitle-option">Limite maior</p>
+            </div>
+
+          </div>
+          <p class="more-detail">Quero ver melhores opções</p>
+          <a href="https://site-nakonta.vercel.app/carts.html">
+            <button class="btn-box">Ver melhores opções</button>
+
+          </a>
+        </div>
+      </section>
+
+      <section style="color: yellow; background-color: #2d731b; padding: 5px; text-align: center; font-weight: bold;">
+        <p>Selecionamos as melhores ofertas do mercado para você aproveitar ao máximo seu cartão</p>
+      </section>
+
+      <!-- Offers -->
+      <section style="background-color: #4CAC33;">
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; flex-direction:row;">
+          <!-- CARD -->
+          <div
+            style="background-color: white; display: inline-flex; border-radius: 20px; border: 1px solid rgb(129, 155, 126); width: 255px; padding: 1%; align-items: center; height: 100px; margin: 20px 0;">
+            <!--Image Card-->
+            <div>
+              <img src="https://nakonta.online/assets/img/anUidade-free.png" alt="" style="width: 80%;">
+            </div>
+            <!-- Content Card -->
+            <div style="font-size: 80%; width: 200%; text-align: left;  margin: 0;">
+              <h3 style="margin: 0;">Anuidade Zero</h3>
+              <p style="margin: 0;">
+                Efetuando R$100,00<br />
+                de compras por mês,<br />
+                você não paga anuidade!
+              </p>
+            </div>
+          </div>
+          <div
+            style="background-color: white; display: inline-flex; border-radius: 20px; border: 1px solid rgb(129, 155, 126); width: 255px; padding: 1%; align-items: center; height: 100px; margin: 20px 0;">
+            <!--Image Card-->
+            <div>
+              <img src="	https://nakonta.online/assets/img/cashback.jpeg" alt="" style="width: 80%;">
+            </div>
+            <!-- Content Card -->
+            <div style="font-size: 80%; width: 200%; text-align: left; ">
+              <h3 style=" margin: 0;">Cashback</h3>
+              <p style="margin: 0;">
+                Aproveite Cashback</br>
+                em cada compra realizada,</br>
+                para continuar comprando mais!
+              </p>
+            </div>
+          </div>
+          <div
+            style="background-color: white; display: inline-flex; border-radius: 20px; border: 1px solid rgb(129, 155, 126); width: 255px; padding: 1%; align-items: center; height: 100px; margin: 20px 0;">
+            <!--Image Card-->
+            <div>
+              <img src="	https://nakonta.online/assets/img/descontos.png" alt="" style="width: 80%;">
+            </div>
+            <!-- Content Card -->
+            <div style="font-size: 80%; width: 200%; text-align: left;">
+              <h3 style="margin: 0;">Descontos</h3>
+              <p style="margin: 0;">
+                Aproveite descontos</br>
+                de até 60% em diversos</br>
+                estabelecimentos!</br>
+              </p>
+            </div>
+          </div>
+          <div
+            style="background-color: white; display: inline-flex; border-radius: 20px; border: 1px solid rgb(129, 155, 126); width: 255px; padding: 1%; align-items: center; height: 100px; margin: 20px 0;">
+            <!--Image Card-->
+            <div>
+              <img src="https://nakonta.online/assets/img/cartao-internacional.png" alt="" style="width: 80%;">
+            </div>
+            <!-- Content Card -->
+            <div style="font-size: 80%; width: 200%; text-align: left;">
+              <h3 style="margin: 0;">Cartão Internacional</h3>
+              <p style="margin: 0;">
+                Efetue assinaturas ou<br />
+                compras no exterior com<br />
+                um Cartão Internacional!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Info  Bottom -->
+
+
+      <section class="info">
+        <p style="color: #999999;">A <strong>Nakonta</strong> é uma nova opção do mercado para apresentar aos seus
+          usuários as opções existentes de cartões de crédito, como objetivo de simplificar e agregar seus valores de
+          forma simples e sofisticada. Nosso foco é apresentar ao usuário as <strong>vantagens de cada cartão</strong>
+          de forma simples, rápida e direta.
+        </p>
+        <a href="https://nakonta.online/">
+          <button
+            style="background-color: #4CAC33; color: white; padding: 10px; font-weight: bold; font-size: 16px; border-radius: 50px; margin-top: 20px; border: 0; cursor: pointer; "
+            onmouseover="this.style.backgroundColor='#287914'" onmouseout="this.style.backgroundColor='#4CAC33'">
+            Comece Já
+
+          </button>
+
+        </a>
+
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer style="background-color: #999999; color: white; font-size: 16px; text-align: center; padding: 20px;">
+      <div>
+        <p>Ao informar os seus dados, você concorda que a Adworks Solutions como gestora do site possa utilizar seus
+          dados para apresentar campanhas através de E-mails e/ou SMS. Os dados coletados nessa página não será
+          comercializado para terceiros, segundo padrão da Lei Geral de Proteção aos Dados (LGPD)</p>
+      </div>
+      <div style="display: flex; justify-content: center; font-size: 20px; margin-top: 20px;">
+        <a href="https://web.facebook.com/nakonta.online?_rdc=1&_rdr" style="text-decoration: none;">
+          <i class="fa-brands fa-facebook" style="color: white;" onmouseover="this.style.color='#3F62A9'"
+            onmouseout="this.style.color='white'"></i>
+        </a>
+        <a href="https://www.instagram.com/">
+          <i class="fa-brands fa-instagram" style="color: white; margin: 0 20px;"
+            onmouseover="this.style.color='#9633A5'" onmouseout="this.style.color='white'"></i>
+        </a>
+        <a href="">
+          <img src="https://nakonta.online/assets/img/logo-footer.png" alt="logo da nakonta" style="width: 90px">
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
