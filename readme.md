@@ -39,4 +39,4 @@ A estilização e a lógica foi em escopo interno. Separei externamente para fin
 ## Licença
 The MIT License (MIT)
 
-Copyright ©️ 2021 - Lázaro Pimentel
+Copyright ©️ 2022 - Lázaro Pimentel
